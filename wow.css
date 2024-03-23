@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+.icon {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    background: grey;
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+.nav ul li a:hover {
+    background: white;
+    color: grey;
+    padding: 15px 10px;
+    transition: all 0.8s;
+}
+
+
+@media screen and (max-width:800px) {
+    .nav {
+        position: absolute;
+        display: none;
+        right: 50px;
+        top: 40px;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .header {
+        padding: 10px 5 0px;
+        position: relative;
+    }
+    .nav ul {
+        background: grey;
+    }
+    .nav ul li {
+        display: block;
+        padding: 15px 10px;
+        width: 200px;
+    }
+    .nav.active{
+        display: block;
+    }
+}
+
+    .showcase {
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(rgba(14, 13, 13, 0.5), rgba(22, 22, 22, 0.5)), url(images/pexels-cesar-perez-733745.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding-top: 100px;
+        color: white;
+        text-shadow: 0 0 10px rgba(22, 22, 22, 0.5), 0 0 20px rgba(22, 22, 22, 0.5), 0 0 30px rgba(22, 22, 22, 0.5) ;
+    }
+
+    .show-text {
+        font-size: 70px;
+        text-shadow: 0 0 10px rgba(22, 22, 22, 0.5), 0 0 20px rgba(22, 22, 22, 0.5), 0 0 30px rgba(22, 22, 22, 0.5) ;
+    }
+
+    .other {
+        font-size: 40px;
+    }
+
+    .explore {
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        border: none;
+        margin-top: 15px;
+    }
+
+    .explore a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .explore:hover {
+        background: white;
+        color: grey;
+    }
+
+
+    .lol {
+        text-align: center;
+    }
+
+.trending-product {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    /* border: 2px solid black; */
+}
+
+.product {
+    margin: auto;
+    width: 80%;
+    height: 400px;
+    /* border: 2px solid blue; */
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.product:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.good {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    /* border: 2px solid grey; */
+    background: url(images/pexels-alexgtacar-1592384.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+.good1 {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    /* border: 2px solid grey; */
+    background: url(images/acura.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.good2 {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    /* border: 2px solid grey; */
+    background: url(images/pexels-alex-amorales-909907.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.good3 {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    /* border: 2px solid grey; */
+    background: url(images/pexels-arnie-watkins-3156482.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.good4 {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    /* border: 2px solid grey; */
+    background: url(images/pexels-cesar-perez-733745.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.good5 {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    /* border: 2px solid grey; */
+    background: url(images/pexels-garvin-st-villier-3311574.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.good6 {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    /* border: 2px solid grey; */
+    background: url(images/pexels-jagmeet-singh-1134857.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.good7 {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    /* border: 2px solid grey; */
+    background: url(images/pexels-jay-pizzle-3764984.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.good8 {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    /* border: 2px solid grey; */
+    background: url(images/pexels-johannes-plenio-3302441.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.good9 {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    /* border: 2px solid grey; */
+    background: url(images/pexels-maurice-lustig-2896135.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.good10 {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    /* border: 2px solid grey; */
+    background: url(images/pexels-lukas-žvikas-1075947.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.good11 {
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    /* border: 2px solid grey; */
+    background: url(images/pexels-людмила-шалимова-18415589.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.price {
+    margin-left: 30px;
+}
+
+.btn {
+    margin: auto;
+    width: 200px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+}
+
+.btn:hover {
+    background: white;
+    color: grey;
+}
+
+@media screen and (max-width:768px) {
+    .trending-product {
+    grid-template-columns : repeat(2,1fr);
+    }
+
+    .show-text {
+        font-size: 50px;
+    }
+
+    .other {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .trending-product {
+    grid-template-columns : repeat(1,1fr);
+    }
+
+    .show-text {
+        font-size: 20px;
+    }
+
+    .other {
+        font-size: 15px;
+    }
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .form-group input {
+        width: calc(100% - 16px);
+    }
+}
+
+.newsletter-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    background-color: grey;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .form-group input {
+        width: calc(100% - 16px);
+    }
+}
+
